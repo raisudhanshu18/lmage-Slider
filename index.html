@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/Black-bg.png" alt="1" />
+          <h1>Sahil</h1>
+          <div class="details">
+            <h2>Sahil</h2>
+            <p>Bhai</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/Black-bg.png" alt="2" />
+          <h1>Ruttik</h1>
+          <div class="details">
+            <h2>Ruttik</h2>
+            <p>Dost</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/Black-bg.png" alt="3" />
+          <h1>Krutiksha</h1>
+          <div class="details">
+            <h2>Krutiksha</h2>
+            <p>Dost</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/Black-bg.png" alt="4" />
+          <h1>Sudhanshu</h1>
+          <div class="details">
+            <h2>Sudhanshu</h2>
+            <p>Next Ai</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/Black-bg.png" alt="5" />
+          <h1>Neha</h1>
+          <div class="details">
+            <h2>Neha</h2>
+            <p>Dost</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/Black-bg.png" alt="6" />
+          <h1>Akshay</h1>
+          <div class="details">
+            <h2>Akshay</h2>
+            <p>Bhai</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/Black-bg.png" alt="7" />
+          <h1>Rushikesh</h1>
+          <div class="details">
+            <h2>Rushikesh</h2>
+            <p>Bhai</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
